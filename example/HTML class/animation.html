@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes textColorAni{
+            0%{ color: red;}
+            15%{color: orange;}
+            30%{color: yellow;}
+            45%{color: greenyellow;}
+            60%{color: blue;}
+            75%{color: navy;}
+            90%{color: violet;}
+            100%{color: red;}
+        }
+        @keyframes cnrth{
+            0%{font-size: 500%;}
+            50%{font-size: 100%;}
+            100%{font-size: 500%}
+        }
+        @keyframes intro{
+            0%{opacity: 0;}  /*opacity 투명도*/
+            33.33%{opacity: 0.25;}
+            66.66%{opacity: 0.5;}
+            100%{opacity: 1;}
+
+        }
+        .p2{
+            font-size: 30px;
+            animation-name: textColorAni;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        .p1{
+            font-size: 500%;
+        }
+        .p1:hover{
+            font-size: 500%;
+            animation-name: cnrth;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        span{
+            font-size: 30px;
+            animation-name: intro;
+            animation-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+    <p class="p2">안녕하세요</p>
+    <p class="p1">꽝</p>
+    <span>인트로</span>
+</body>
+</html>
