@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+*{
+    box-sizing : border-box;  /*모든 박스의 줄 크기도 포함해서 지정*/
+    -webkit-box-sizing: border-box; /*크롬최적화*/
+    -moz-box-sizing: border-box;
+}
+
+div{
+    font-weight: 700;
+    font-size: 15px;
+    color : black;
+    text-align : left;
+    display : block;
+    /*border-width: 1px;  선 굵기
+    border-style: solid;
+    border-color: red 
+     border: solid 1px black;*/
+}
+.container{
+    width:400px;
+    /*margin-top: 10ps;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin : 10px 0px 0px 10px;  위 오른쪽 아래 왼쪽
+    margin : 10px; 모든방향
+    margin : 10px 20px;위+아래  오른쪽+왼쪽*/
+    margin : 0 auto;  /*가운대로 자동맞춤*/
+}
+.input-form{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+}
+.display-flex{
+    display : flex;
+}
+input[type="text"],
+input[type = "password"],
+input[type = "email"]{
+    width: 300px;
+}
+#submit{
+    width: 100px;
+    margin-left: 150px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;  /*중복된 선을 합쳐줌*/
+        }
+        /*nth-child()
+        even == 2n   : 짝수
+        odd  == 2n-1 : 홀수*/
+        tbody>tr:nth-child(odd){
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%">
+        <thead>
+            <tr>  
+                <th width="33.3%">번호</th>
+                <th>이름</th>
+                <th>나이</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1번</td>
+                <td>홍길동</td>
+                <td>20살</td>
+            </tr>
+            <tr>
+                <td>1번</td>
+                <td>홍길동</td>
+                <td>20살</td>
+            </tr>
+            <tr>
+                <td>1번</td>
+                <td>홍길동</td>
+                <td>20살</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

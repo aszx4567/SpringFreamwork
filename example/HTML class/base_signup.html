@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>signup</title>
+    <link rel="stylesheet" href="./base.signup.css">
+</head>
+<body>
+  
+    <div class="container">
+        <form action="" method="GET">
+            <div class="display-flex">
+                <div class="input-form"> 아이디 </div>
+                <input type="text" name="id" >
+            </div>
+            <div class="display-flex">
+                <div class="input-form">비말번호  </div>
+                <input type="password" name="pw">
+            </div>
+            <div class="display-flex">
+                <div class="input-form">비밀번호확인 </div>
+                <input type="password" name="pw2">
+            </div>
+            <div class="display-flex">
+                <div class="input-form">성별</div>
+                <label for="male">남성</label>
+                <input type="radio" name="gender" id="male" checked value="male">
+                <label for="female">여성</label>
+                <input type="radio" name="gender" id="female" checked value="female">                
+            </div>
+            <div class="display-flex">
+                <div class="input-form">이메일</div>
+                <input type="email" name="email">
+            </div>
+            <div>
+                <button type ="submit" id = "submit">제출</button>
+            </div>
+              
+        </form>
+    </div>
+</body>
+</html>
